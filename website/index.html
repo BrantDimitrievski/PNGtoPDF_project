@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logos/pngtopdflogo_small.png"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>PNG to PDF</title>
+</head>
+
+
+<body>
+    <div class="container">
+        <img src="logos/png_pdf_logo.png" class = "logo_1">
+        <h2>Our online converter automatically deletes all files after you download the pdf.</h2>
+
+        <form action="http://127.0.0.1:5000/convert" method="post" enctype="multipart/form-data">
+            <label for="file" class="drop-container" id="dropcontainer">
+                <span class="drop-title">Drop files here</span>
+                or
+                <input type="file" id="file" name="file" accept=".png" required>
+            </label>
+            <br><br><br>
+            <div class="button-container">
+                <button type="submit" class="button">Download PDF file</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
